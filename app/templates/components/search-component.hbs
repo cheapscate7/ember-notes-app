@@ -1,0 +1,17 @@
+<div class="search-container">
+    {{#if this.active}} <!-- if we have selected the new note input -->
+        <div class="input-container active">
+            <input class="title" type="text" onchange={{action "titleUpdate" value="target.value"}} placeholder="{{this.placeholderActive}}"/>   <!-- note title -->
+            <img src="assets/images/push-pin.svg"/>
+            <div contenteditable class="content" id="new-note-content" onchange={{action "contentUpdate" value="target.value"}} placeholder="{{this.placeholderDefault}}"/>    <!-- note content -->
+            <div class="edit">
+                <img src="assets/images/icons8-picture.svg"/>
+                <button class="close" onclick={{action "toggleActivation"}}>Close</button>
+            </div>
+        </div>
+    {{else}}    <!-- if the new note field is not active -->
+        <div contenteditable class="input-container default" onclick={{action "toggleActivation"}} placeholder="{{this.placeholderDefault}}"><!-- click to activate new note input -->
+            <img src="assets/images/icons8-picture.svg"/>
+        </div>   
+    {{/if}}
+</div>

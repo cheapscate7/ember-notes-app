@@ -1,0 +1,8 @@
+<div class="notes-container">
+    <h2>Pinned</h2>
+    <div class="notes pinned">
+        {{#each this.notes as |note|}}
+            {{note-component note=note}}
+        {{/each}}
+    </div>
+</div>
