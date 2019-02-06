@@ -2,6 +2,8 @@
 
 This is a small clone of Google Keep using Emberjs and LESS. Im not aiming to implement all features of google keep but enough that you can added notes and pictures.
 
+Currently have not tested on any browser but google Chrome yet. This should run fine on any browser that supports diplay: flex
+
 ## Credits
 All icons are from icons8.com and https://www.flaticon.com/ . The yellow icon was made by me
 
